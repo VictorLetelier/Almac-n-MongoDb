@@ -1,1 +1,6 @@
 # Almac-n-MongoDb
+Este es un programa el cual consiste en administrar una base de datos no relacional de un almacén, el programa cuenta con una interfaz básica desarrollada por Python utilizando Tkinter y está conectada con MongoDb mediante la librería PyMongo.
+El programa cuenta con funciones CRUD básicas y 4 colecciones, las cuales son: Empleado, Envío, Factura y Producto, donde se van a guardar los datos de interés de cada colección.
+La colección Envío cuenta con 2 subdocumentos llamados "Proveedor" y "Stock enviado", en "Proveedor" se guardaran todos los datos referentes a la persona que provee el producto y en "Stock Enviado" se guardaran los productos enviados junto con el stock de estos utilizando un arreglo para agruparlos todos.
+La colección Factura también cuenta con un subdocumento que es un arreglo llamado "Detalle", donde se guardará el producto comprado, la cantidad que se está comprando y el precio.
+Para recuperar los datos, el programa utiliza filtros de búsqueda por cada uno de los datos guardados en cada colección, y también le permite al usuario seleccionar cuales son los datos recuperados. También cuenta con el botón "Mostrar todos los datos" donde se registran cada uno de los datos almacenados en la colección seleccionada.
